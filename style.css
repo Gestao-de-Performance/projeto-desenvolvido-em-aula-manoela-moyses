@@ -13,10 +13,16 @@
   --purple-200: #a369ff;
   --purple-300: #8733ff;
   --purple-500: #5a13b4;
+
+  --html: #db4e26;
+  --css: #2862ea;
+  --js: #e2c431;
+  --wp: #207196;
 }
 
 body {
   background-color: var(--black-300);
+  color: var(--white);
 }
 
 .background-header-color {
@@ -35,7 +41,7 @@ body {
   height: 150px;
 }
 
-.button-header {
+.button {
   background-color: var(--purple-500);
   color: var(--white);
   padding: 10px 15px;
@@ -47,16 +53,19 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.button-header:hover {
+.button:hover {
   background-color: var(--purple-200);
   transition: background-color 0.5s ease;
+}
+
+.margin-container {
+  margin: 8% 17%;
 }
 
 #apresentacao_do_site {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2% 10%;
   gap: 40px;
 }
 
@@ -64,18 +73,104 @@ body {
   width: 750px;
 }
 
-#apresentacao_do_site h1 {
+.titulo-bloco {
   font-size: 2.5rem;
-  color: var(--white);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#apresentacao_do_site p {
+.paragrafo {
   font-size: 1.4rem;
-  color: var(--white);
+  margin-bottom: 16px;
 }
 
-#skills {
-  
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill {
+  padding: 10px 48.7px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.html {
+  border-color: var(--html);
+}
+
+.css {
+  border-color: var(--css);
+}
+
+.js {
+  border-color: var(--js);
+}
+
+.wp {
+  border-color: var(--wp);
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--purple-500);
+  border-radius: 25px;
+  margin: 0 25%;
+  padding: 35px 0;
+  min-height: 200px;
+  gap: 30px;
+}
+
+.formulario-contato input {
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  min-width: 260px;
+  font-size: 1.2rem;
+}
+
+.formulario-contato input::placeholder {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.formulario-contato textarea {
+  width: 360px;
+  height: 130px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  resize: none;
+  padding: 10px;
+}
+
+.formulario-contato .button {
+  border: none;
+}
+footer {
+  background-color: var(--purple-300);
+}
+
+footer div {
+  margin: 0 10%;
+  padding: 3% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer img {
+  max-width: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
 }
